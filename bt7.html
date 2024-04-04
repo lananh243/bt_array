@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let arr = [1, 2, 1, 4, 5, 6, 2, 4, 6, 1];
+    let count = {};
+
+    for (let i = 0; i < arr.length; i++) {
+        let num = arr[i];
+        if (count[num]) {
+            count[num]++;
+        } else {
+            count[num] = 1;
+        }
+    }
+
+    for (let key in count) {
+        if (count[key] === 2) {
+            console.log(`Phần tử ${key} xuất hiện 2 lần`);
+        }
+    }
+
+  </script>
+</html>

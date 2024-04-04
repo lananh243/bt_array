@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let arr = [1, 2, 'a', 3.14, 'b', 4, 5.5];
+    let test = false;
+
+    for (let i = 0; i < arr.length; i++) {
+    if (Number.isInteger(arr[i])) {
+        console.log(arr[i]);
+        test = true;
+    }
+    }
+
+    if (!test) {
+    console.log("Trong mảng không tồn tại số nguyên");
+    }
+</script>
+</html>
