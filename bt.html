@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: midnightblue;
+            font-family: 'Times New Roman', Times, serif;
+    
+        }
+        .title{
+            color: hotpink;
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+        }
+        .box{
+            width: 1400px;
+            height: 380px;
+            background-color: white;
+            display: flex;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .feedback{
+            width: 1400px;
+            height: 30px;
+            margin-top: 70px;
+            margin-left: 568px;
+            white-space: nowrap;
+        }
+        .btn1{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px;
+            cursor: pointer;
+        }
+        .btn1.clicked {
+            background-color: red;
+        }
+        .button{
+            display: flex;
+            margin-top: 130px;
+            position: relative;
+            right: 390px;
+            gap: 5px;
+        }
+        .write{
+            margin-top: 240px;
+            position: relative;
+            right: 1065px;
+        }
+        .send{
+            display: flex;
+            margin-left: 700px;
+            width: 80px;
+            height: 30px;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 11px;
+            background-color: darkgray;
+            border: 1px;
+            color: black;
+            border-radius: 5px;
+        }
+        .move{
+            display: flex;
+            margin: auto;
+            position: absolute;
+            bottom: 180px;
+            margin-left: 50px;
+        }
+        .icon{
+            display: flex;
+            margin-left: 1200px;
+            margin-top: 12px;
+        }
+        .point{
+            display: flex;
+            margin-left: -1300px;
+            position: relative;
+            bottom: -70px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Feedback Coach</h1>
+    <div class="box">
+        <h3 class="feedback">Thầy dạy anh em có hay không</h3> 
+        <br><br>
+        <div class="button">
+            <button class="btn1 " value="1">1</button>
+            <button class="btn1 " value="2">2</button>
+            <button class="btn1 " value="3">3</button>
+            <button class="btn1 " value="4">4</button>
+            <button class="btn1" value="5">5</button>
+            <button class="btn1 " value="6">6</button>
+            <button class="btn1 " value="7">7</button>
+            <button class="btn1 " value="8">8</button>
+            <button class="btn1 " value="9">9</button>
+            <button class="btn1 " value="10">10</button>
+            
+        </div>
+        
+        <br><br>
+        <div class="write">
+            <input id="reviewInput" style="width: 800px;height: 50px;" type="text" placeholder="Write a review">
+            <button class="send" id="sendButton">Send</button>
+        </div>
+        
+    </div>
+    <br><br><br>
+    <table id="reviewTable" style="width: 100%; background-color: white;box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+        <thead>
+            <tr>
+                <td><button class="btn1">10</button></td>
+                <td style="text-align: right;">
+                   <span class="material-symbols-outlined">
+                    open_in_new
+                    </span>
+                    <span class="material-symbols-outlined" id="delete">
+                    close
+                    </span> 
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">10 điểm</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="./bt.js"></script>
+</html>
